@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Guide</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 36px;
+            color: #D6BFA4;
+        }
+
+        .container p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto; /* Centrer l'avatar */
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn-blue {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #D6BFA4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn-blue:hover {
+            background-color: #8A7465;
+        }
+
+        .banner {
+            background-image: url(images/arrière.webp);
+            height: 300px;
+            padding: 20px;
+            text-align: center;
+            color: black;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner h1 {
+            font-size: 50px;
+        }
+
+        .banner h2 {
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+            gap: 20px; /* Espacement entre les boîtes */
+            margin-top: 20px;
+        }
+
+        .box {
+            border: 2px solid #D6BFA4;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Styles spécifiques pour la dernière ligne */
+        .box:nth-child(7), 
+        .box:nth-child(8) {
+            grid-column: span 1; /* Chaque boîte occupe une colonne */
+        }
+
+        @media (max-width: 768px) {
+            .box-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petit écran */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box-container {
+                grid-template-columns: 1fr; /* 1 colonne sur très petit écran */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="container">
+            <h1>Just follow the Guide!</h1>
+            <p>You will learn from the best and pass all your exams</p>
+            <a href="#apply-section" class="btn-blue">Click here to start</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>All your courses in one</h1>
+        <p>Find all the masters of their disciplines to explain your lessons!</p>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <h3>Mathematics</h3>
+            <a href="https://www.youtube.com/@YMONKA" class="avatar">
+                <img src="images/Maths.jpg" alt="Maths">
+            </a>
+            <a href="https://www.youtube.com/@YMONKA" class="btn-blue">See the course</a>
+        </div>
+
+        <div class="box">
+            <h3>English</h3>
+            <a href="https://www.youtube.com/@MonsieurProff" class="avatar">
+                <img src="images/English.webp" alt="English"> 
+            </a>
+            <a href="https://www.youtube.com/@MonsieurProff" class="btn-blue">See the course</a>
+        </div>
+
+        <div class="box">
+            <h3>Français</h3>
+            <a href="https://www.tiktok.com/@selenedepoche?lang=fr" class="avatar">
+                <img src="images/FR.jpg" alt="Français"> 
+            </a>
+            <a href="https://www.tiktok.com/@selenedepoche?lang=fr" class="btn-blue">See the course</a>
+        </div>
+
+        <div class="box">
+            <h3>History</h3>
+            <a href="https://www.youtube.com/@leprofdhistoire391" class="avatar">
+                <img src="images/histoire.webp" alt="Histoire"> 
+            </a>
+            <a href="https://www.youtube.com/@leprofdhistoire391" class="btn-blue">See the course</a>
+        </div>
+
+        <div class="box">
+            <h3>Geography</h3>
+            <a href="https://www.tiktok.com/@professeur_tokville?lang=fr" class="avatar">
+                <img src="images/Geo.webp" alt="Géographie"> 
+            </a>
+            <a href="https://www.tiktok.com/@professeur_tokville?lang=fr" class="btn-blue">See the course</a>
+        </div>
+
+        <div class="box">
+            <h3>Sciences</h3>
+            <a href="https://www.youtube.com/@profsvt71" class="avatar">
+                <img src="images/SVT.avif" alt="SVT"> 
+            </a>
+            <a href="https://www.youtube.com/@profsvt71" class="btn-blue">See the course</a>
+        </div>
+
+        <div class="box">
+            <h3>Physics</h3>
+            <a href="https://www.youtube.com/@eprofs" class="avatar">
+                <img src="images/P-H.webp" alt="Physique-Chimie"> 
+            </a>
+            <a href="https://www.youtube.com/@eprofs" class="btn-blue">See the course</a>
+        </div>
+
+        <div class="box">
+            <h3>Economics</h3>
+            <a href="https://www.youtube.com/@leprofdeses" class="avatar">
+                <img src="images/SES.webp" alt="SES"> 
+            </a>
+            <a href="https://www.youtube.com/@leprofdeses" class="btn-blue">See the course</a>
+        </div>
+    </div>
+    <div id="apply-section">
+    <div data-tf-live="01JBMDN1T7MB45SGH9TS1KZDMR"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+</body>
+</html>
+
+
+
+
+

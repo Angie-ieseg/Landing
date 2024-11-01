@@ -1,0 +1,19 @@
+.avatar {
+    width: 100px; /* Taille de l'avatar */
+    height: 100px;
+    overflow: hidden; /* Cache les parties qui dépassent */
+    border-radius: 50%; /* Rend l'avatar circulaire */
+    border: 2px solid #ddd; /* Ajoute une bordure */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.avatar img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: 100%; /* L'image prend toute la hauteur du conteneur */
+    object-fit: cover; /* Ajuste et recadre l'image pour remplir le cercle */
+}
+
+
